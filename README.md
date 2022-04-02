@@ -9,7 +9,7 @@
 
 ## 交流
 
-![微信群](doc/.vuepress/public/communication/wxwork.jpg)
+![微信群](https://github.com/pangum/pangu/raw/master/doc/.vuepress/public/communication/wxwork.jpg)
 
 ## 捐助
 
