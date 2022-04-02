@@ -1,19 +1,13 @@
 package service
 
 import (
-	`fmt`
-	`os`
-	`path/filepath`
-	`strings`
-
-	`github.com/goexl/gex`
-	`github.com/goexl/gox`
-	`github.com/pangum/logging`
-	`github.com/pangum/pangu`
-	`github.com/storezhang/media`
-	`github.com/ziyunix/core`
-	`github.com/ziyunix/message/convert`
-	`google.golang.org/protobuf/types/known/timestamppb`
+	"github.com/goexl/gex"
+	"github.com/goexl/gox"
+	"github.com/pangum/logging"
+	"github.com/pangum/pangu"
+	"github.com/ziyunix/core"
+	"github.com/ziyunix/message/convert"
+	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
 const ffmpegExec = `ffmpeg`
