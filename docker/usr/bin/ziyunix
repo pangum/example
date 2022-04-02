@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/opt/ziyunix/agent --conf "${ZIYUNIX_HOME}"/application.yml "$@"
