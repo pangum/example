@@ -1,0 +1,20 @@
+# gRPC配置
+grpc:
+  # 服务器配置
+  server:
+    # 如果没有意外，不建议改此配置
+    port: ${GRPC_SERVER_PORT=9001}
+    # 网关
+    gateway:
+      enabled: true
+      path: ${GRPC_GATEWAY_PATH}
+
+
+tag:
+  id: 1
+  name: 测试
+  label: test
+  keywords:
+    - test
+    - testing
+  description: 只用于事例程序的测试

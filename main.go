@@ -1,11 +1,13 @@
 package main
 
 import (
-	`github.com/pangum/pangu`
+	"github.com/pangum/example/internal"
+
+	"github.com/pangum/pangu"
 )
 
 func main() {
-	panic(pangu.New(
-		pangu.Banner(`Ziyunix Agent`, pangu.BannerTypeAscii),
-	).Run(newBootstrap))
+	app := pangu.New()
+	app = app.Banner().Ascii("example").Build()
+	app.Get().Run(internal.NewBootstrap)
 }
