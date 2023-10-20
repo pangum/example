@@ -12,7 +12,7 @@ type Config struct {
 
 func config(config *pangu.Config) (conf *Config, err error) {
 	conf = new(Config)
-	err = config.Load(conf)
+	err = config.Build().Get(conf)
 
 	return
 }

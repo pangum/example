@@ -8,9 +8,9 @@ import (
 	"github.com/pangum/grpc"
 )
 
-func (s *Server) Gateway(_ *runtime.ServeMux, _ *[]grpc.DialOption) (ctx context.Context, hs grpc.EndpointHandlers) {
+func (s *Server) Gateway(_ *runtime.ServeMux, _ *[]grpc.DialOption) (ctx context.Context, handlers grpc.Handlers) {
 	ctx = context.Background()
-	hs = grpc.EndpointHandlers{
+	handlers = grpc.Handlers{
 		protocol.RegisterTagHandlerFromEndpoint,
 	}
 
