@@ -8,6 +8,5 @@ import (
 type Bootstrap struct {
 	pangu.Get
 
-	App *pangu.App
 	Rpc *rpc.Server
 }
